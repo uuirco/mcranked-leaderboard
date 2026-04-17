@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MCRANKED | Elite Leaderboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg-dark: #060b16;
+    --card-bg: rgba(17, 26, 46, 0.85);
+    --accent-blue: #3b82f6;
+    --text-dim: #94a3b8;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-dark);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* PARTICLES */
+#particles {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: var(--accent-blue);
+    border-radius: 50%;
+    opacity: 0.25;
+    animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+    from { transform: translateY(110vh); }
+    to { transform: translateY(-10vh); }
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 35px 0;
+    position: relative;
+    z-index: 2;
+}
+
+/* HEADER - UPDATED TO FLEX FOR 3 COLUMNS */
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--card-bg);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 22px 28px;
+    border-radius: 20px;
+
+    margin-bottom: 25px;
+    backdrop-filter: blur(6px);
+}
+
+/* LOGO SECTION ALIGNED LEFT */
+.header-box > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+}
+
+/* NEW: MIDDLE STAT STYLE */
+.verified-count {
+    font-size: 13px;
+    color: var(--text-dim);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.verified-count span {
+    color: var(--accent-blue);
+    font-weight: 900;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+/* LOGO IMAGE */
+.title-img {
+    height: 52px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* SUBTITLE */
+.subtitle {
+    font-size: 13px;
+    color: var(--text-dim);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* HEADER RIGHT */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.search-inline input {
+    width: 200px;
+    padding: 11px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(0,0,0,0.25);
+    color: white;
+    outline: none;
+}
+
+.search-inline input:focus {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 15px rgba(59,130,246,0.25);
+}
+
+.discord-btn {
+    background: #5865F2;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+}
+
+/* LIST */
+#list {
+    position: relative;
+    z-index: 3;
+}
+
+/* ROWS */
+.row {
+    display: grid;
+    grid-template-columns: 80px 1fr 140px 100px;
+    align-items: center;
+
+    background: var(--card-bg);
+    padding: 14px 20px;
+    margin-bottom: 10px;
+    border-radius: 14px;
+
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.row:hover {
+    transform: translateX(6px);
+    border-color: var(--accent-blue);
+}
+
+.player-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+}
+
+.rank {
+    font-weight: 900;
+    color: var(--text-dim);
+}
+
+.rank-1 { color: gold; font-size: 22px; }
+.rank-2 { color: silver; }
+.rank-3 { color: #cd7f32; }
+
+.name {
+    font-weight: 800;
+}
+
+/* REGION */
+.region-tag {
+    text-align: right;
+    color: #10b981;
+    font-weight: 800;
+}
+
+/* TIER */
+.tier {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.04);
+}
+
+.tier img {
+    width: 16px;
+    height: 16px;
+}
+
+/* COLORS */
+.HT1 { color:#facc15; border:1px solid #facc15; }
+.LT1 { color:#fbbf24; }
+
+.HT2 { color:#c0c0c0; }
+.LT2 { color:#9ca3af; }
+
+.HT3 { color:#fb923c; }
+.LT3 { color:#a16207; }
+
+.HT4,.LT4,.HT5,.LT5 {
+    color:#cbd5e1;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.card {
+    width: 380px;
+    background: #111a2e;
+    border-radius: 24px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--text-dim);
+}
+
+.close-btn:hover {
+    color: white;
+}
+
+.split-name span {
+    display: inline-block;
+}
+
+.purple { color: #a855f7; }
+.pink { color: #ec4899; }
+
+.name-top2 {
+    color: #60a5fa;
+    font-weight: 900;
+}
+
+.name-top3 {
+    color: #f97316;
+    font-weight: 900;
+}
+
+.uuid-small {
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-top: 4px;
+    margin-bottom: 14px;
+}
+
+.points-box {
+    margin-top: 18px;
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 10px;
+    background: rgba(59,130,246,0.12);
+    border: 1px solid rgba(59,130,246,0.35);
+    font-weight: 800;
+    color: #60a5fa;
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<div class="container">
+
+<div class="header-box">
+    <div>
+        <img src="MCRanked.png" alt="MCRANKED" class="title-img">
+        <div class="subtitle">Elite Leaderboard</div>
+    </div>
+
+    <div class="verified-count">
+        Total Verified Users: <span id="user-count">0</span>
+    </div>
+
+    <div class="header-right">
+        <div class="search-inline">
+            <input id="search" placeholder="Search player...">
+        </div>
+
+        <a class="discord-btn" href="https://discord.gg/F2SbgD5PwW" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" width="20">
+        </a>
+    </div>
+</div>
+
+<div id="list"></div>
+
+</div>
+
+<div class="modal" id="modal">
+    <div class="card">
+        <div class="close-btn" onclick="closeModal()">✕</div>
+        <img id="mAvatar" width="100" height="100" style="border-radius:18px;">
+        <h2 id="mName"></h2>
+        <div id="modalUUID"></div>
+        <div id="mTierBadge" class="tier">
+            <img src="icon.png">
+            <span id="mTierText"></span>
+        </div>
+        <div id="mPoints"></div>
+    </div>
+</div>
+
+<script>
+const tierPoints = {
+  HT1:60, LT1:45,
+  HT2:30, LT2:20,
+  HT3:10, LT3:6,
+  HT4:4, LT4:3,
+  HT5:2, LT5:1
+};
+
+let players=[];
+
+function createParticles(){
+    const c=document.getElementById("particles");
+    for(let i=0;i<50;i++){
+        const p=document.createElement("div");
+        p.className="particle";
+        p.style.left=Math.random()*100+"vw";
+        p.style.animationDuration=(4+Math.random()*4)+"s";
+        c.appendChild(p);
+    }
+}
+
+async function load(){
+    const res=await fetch("verified_users.json?cache="+Date.now());
+    const data=await res.json();
+
+    players=Object.values(data).map(p=>({
+        name:p.mc_username,
+        uuid:p.mc_uuid,
+        tier:p.current_tier||"",
+        region:"EU",
+        points:tierPoints[p.current_tier]||0
+    }));
+
+    // UPDATE THE TOTAL COUNT TEXT
+    document.getElementById("user-count").innerText = players.length;
+
+    render(players);
+}
+
+function render(list){
+    const box=document.getElementById("list");
+    box.innerHTML="";
+
+    [...list].sort((a,b)=>b.points-a.points).forEach((p,i)=>{
+        const rank=i+1;
+        const row=document.createElement("div");
+        row.className="row";
+        row.innerHTML=`
+            <div class="rank rank-${rank<=3?rank:""}">#${rank}</div>
+            <div class="player-info">
+                <img class="avatar" src="https://mc-heads.net/avatar/${p.name}/44">
+                <div class="name">${p.name}</div>
+            </div>
+            <div class="tier ${p.tier}">
+                <img src="icon.png">
+                ${p.tier||"UNRANKED"}
+            </div>
+            <div class="region-tag">${p.region}</div>
+        `;
+        row.onclick=()=>openProfile(p);
+        box.appendChild(row);
+    });
+}
+
+function openProfile(p){
+    document.getElementById("modal").style.display="flex";
+    document.getElementById("mAvatar").src=`https://mc-heads.net/avatar/${p.name}/100`;
+    document.getElementById("modalUUID").className="uuid-small";
+    document.getElementById("modalUUID").innerText=p.uuid;
+    document.getElementById("mPoints").innerHTML=`<div class="points-box">${p.points} POINTS</div>`;
+
+    const rankIndex = players
+        .sort((a,b)=>b.points-a.points)
+        .findIndex(x=>x.name===p.name)+1;
+
+    const nameEl=document.getElementById("mName");
+
+    if(rankIndex===1){
+        nameEl.className="split-name";
+        const mid=Math.ceil(p.name.length/2);
+        const a=p.name.slice(0,mid);
+        const b=p.name.slice(mid);
+        nameEl.innerHTML=`<span class="purple">${a}</span><span class="pink">${b}</span>`;
+    } else if(rankIndex===2){
+        nameEl.className="name-top2";
+        nameEl.innerText=p.name;
+    } else if(rankIndex===3){
+        nameEl.className="name-top3";
+        nameEl.innerText=p.name;
+    } else {
+        nameEl.className="";
+        nameEl.innerText=p.name;
+    }
+
+    const t=document.getElementById("mTierText");
+    const b=document.getElementById("mTierBadge");
+    t.innerText=p.tier||"UNRANKED";
+    b.className="tier "+(p.tier||"");
+}
+
+function closeModal(){
+    document.getElementById("modal").style.display="none";
+}
+
+document.getElementById("search").addEventListener("keydown",(e)=>{
+    if(e.key!=="Enter")return;
+    const v=e.target.value.toLowerCase().trim();
+    const found=players.find(p=>p.name.toLowerCase()===v);
+    if(found) openProfile(found);
+});
+
+createParticles();
+load();
+setInterval(load,10000);
+</script>
+
+</body>
+</html>
