@@ -14,14 +14,14 @@
         "game_type": "DBP",
         "preferred_server": "apple",
         "current_tier": "LT4",
-        "peak_tier": "None",
+        "peak_tier": "LT4",
         "verified_at": "2026-04-20 17:30:49.874444"
     },
     "1490408440424829101": {
         "mc_username": "freemarlowww",
         "mc_uuid": "fc6b191a78d741a9b73305f3678e19d0",
         "game_type": "SBP",
-        "preferred_server": "centralpvp.net",
+        "preferred_server": "donutsmp.net",
         "current_tier": "LT3",
         "peak_tier": "Unranked",
         "verified_at": "2026-04-20 17:31:11.865888"
