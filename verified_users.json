@@ -7,5 +7,32 @@
         "current_tier": "LT3",
         "peak_tier": "HT3",
         "verified_at": "2026-04-19 20:21:17.160048"
+    },
+    "1178086643043934289": {
+        "mc_username": "RinsableTrack79",
+        "mc_uuid": "43c5258fc6964eeebd36aa8ada230b72",
+        "game_type": "DBP",
+        "preferred_server": "apple",
+        "current_tier": "None",
+        "peak_tier": "None",
+        "verified_at": "2026-04-20 17:30:49.874444"
+    },
+    "1490408440424829101": {
+        "mc_username": "freemarlowww",
+        "mc_uuid": "fc6b191a78d741a9b73305f3678e19d0",
+        "game_type": "SBP",
+        "preferred_server": "centralpvp.net",
+        "current_tier": "LT3",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-20 17:31:11.865888"
+    },
+    "854380846731100190": {
+        "mc_username": "LightPVPs",
+        "mc_uuid": "0f11ceff99db41c9b52ef65cd0a268da",
+        "game_type": "DBP",
+        "preferred_server": "eu.applepvp.com",
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-20 17:31:18.405580"
     }
 }
