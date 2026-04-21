@@ -13,8 +13,8 @@
         "mc_uuid": "798c20706bf440e8bb02bfdf039a8cd2",
         "game_type": null,
         "preferred_server": null,
-        "current_tier": "HT3",
-        "peak_tier": "LT2",
+        "current_tier": "LT2",
+        "peak_tier": "HT3",
         "verified_at": "2026-04-21 15:27:15.350971"
     },
     "1400125611812589730": {
@@ -25,5 +25,14 @@
         "current_tier": "Unranked",
         "peak_tier": "Unranked",
         "verified_at": "2026-04-21 15:51:04.044026"
+    },
+    "1178086643043934289": {
+        "mc_username": "RinsableTrack79",
+        "mc_uuid": "43c5258fc6964eeebd36aa8ada230b72",
+        "game_type": null,
+        "preferred_server": null,
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-21 16:51:15.032280"
     }
 }
