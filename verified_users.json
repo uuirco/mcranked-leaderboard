@@ -5,7 +5,7 @@
         "game_type": "DBP",
         "preferred_server": "eu.applepvp.com",
         "current_tier": "HT3",
-        "peak_tier": "Unranked",
+        "peak_tier": "HT3",
         "verified_at": "2026-04-21 14:00:15.908904"
     },
     "438246026357243925": {
@@ -16,5 +16,14 @@
         "current_tier": "LT2",
         "peak_tier": "Unranked",
         "verified_at": "2026-04-21 15:27:15.350971"
+    },
+    "1400125611812589730": {
+        "mc_username": "PARTYSVENSKENG11",
+        "mc_uuid": "b9215474d8874a06ad978a1eb0a11682",
+        "game_type": "DBP",
+        "preferred_server": "CENTRAL",
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-21 15:51:04.044026"
     }
 }
