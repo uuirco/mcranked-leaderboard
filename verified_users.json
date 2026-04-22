@@ -43,5 +43,32 @@
         "current_tier": "Unranked",
         "peak_tier": "Unranked",
         "verified_at": "2026-04-21 17:13:52.804797"
+    },
+    "854380846731100190": {
+        "mc_username": "LightPVPs",
+        "mc_uuid": "0f11ceff99db41c9b52ef65cd0a268da",
+        "game_type": "DBP",
+        "preferred_server": "eu.applepvp.com",
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-21 18:57:09.288141"
+    },
+    "1168618170395918458": {
+        "mc_username": "Not_Me_Fr",
+        "mc_uuid": "1e7743853d7f4f6bb416fa0725019c5b",
+        "game_type": null,
+        "preferred_server": null,
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-21 20:37:26.684606"
+    },
+    "1214595009937018942": {
+        "mc_username": "vqmpa_",
+        "mc_uuid": "8dd6b2d078f1450488b968bfbd37b3bc",
+        "game_type": "SBP",
+        "preferred_server": "central",
+        "current_tier": "LT3",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-22 14:38:36.024537"
     }
 }
