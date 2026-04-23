@@ -30,7 +30,7 @@
         "mc_username": "RinsableTrack79",
         "mc_uuid": "43c5258fc6964eeebd36aa8ada230b72",
         "game_type": "DBP",
-        "preferred_server": "apple",
+        "preferred_server": "apples and bananas",
         "current_tier": "LT4",
         "peak_tier": "Unranked",
         "verified_at": "2026-04-21 16:51:15.032280"
@@ -70,5 +70,23 @@
         "current_tier": "LT3",
         "peak_tier": "Unranked",
         "verified_at": "2026-04-22 14:38:36.024537"
+    },
+    "1490408440424829101": {
+        "mc_username": "freemarlowww",
+        "mc_uuid": "fc6b191a78d741a9b73305f3678e19d0",
+        "game_type": "SBP",
+        "preferred_server": "donutsmp.net",
+        "current_tier": "LT3",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-22 19:03:20.849443"
+    },
+    "1204309457342038017": {
+        "mc_username": "QASMPLEGENT",
+        "mc_uuid": "20bdcb0e8d694dcc850ae3ba9cb90367",
+        "game_type": "LOL",
+        "preferred_server": "CENTRALPVP.NET",
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-22 22:23:38.986801"
     }
 }
