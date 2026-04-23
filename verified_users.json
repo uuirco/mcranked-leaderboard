@@ -49,7 +49,7 @@
         "mc_uuid": "0f11ceff99db41c9b52ef65cd0a268da",
         "game_type": "DBP",
         "preferred_server": "eu.applepvp.com",
-        "current_tier": "Unranked",
+        "current_tier": "HT5",
         "peak_tier": "Unranked",
         "verified_at": "2026-04-21 18:57:09.288141"
     },
@@ -88,5 +88,14 @@
         "current_tier": "Unranked",
         "peak_tier": "Unranked",
         "verified_at": "2026-04-22 22:23:38.986801"
+    },
+    "762278402089680896": {
+        "mc_username": "Marlowww",
+        "mc_uuid": "d219c8eed32e4da2b22e0aa69d36c88a",
+        "game_type": "DBP",
+        "preferred_server": "Pidors",
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-23 18:27:31.225181"
     }
 }
