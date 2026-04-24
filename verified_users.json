@@ -115,5 +115,14 @@
         "current_tier": "Unranked",
         "peak_tier": "Unranked",
         "verified_at": "2026-04-24 18:44:55.920889"
+    },
+    "1199090289034399856": {
+        "mc_username": "WalksyMain",
+        "mc_uuid": "cde6b5dfe3b84c1ab9982f6e6fbe5ef2",
+        "game_type": null,
+        "preferred_server": null,
+        "current_tier": "HT2",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-24 21:12:06.705061"
     }
 }
