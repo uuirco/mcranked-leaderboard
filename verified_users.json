@@ -97,5 +97,23 @@
         "current_tier": "Unranked",
         "peak_tier": "Unranked",
         "verified_at": "2026-04-23 18:27:31.225181"
+    },
+    "1268211261418770487": {
+        "mc_username": "BestOffPortugall",
+        "mc_uuid": "5b8169e68f6645d896c68935d7b55435",
+        "game_type": "DBP",
+        "preferred_server": "Mcprac",
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-24 00:58:24.040072"
+    },
+    "1474717288388362412": {
+        "mc_username": "Connexion",
+        "mc_uuid": "53670e9ddf0445c4847ecbcca4f50e99",
+        "game_type": null,
+        "preferred_server": null,
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-24 18:44:55.920889"
     }
 }
