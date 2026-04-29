@@ -124,5 +124,41 @@
         "current_tier": "HT2",
         "peak_tier": "Unranked",
         "verified_at": "2026-04-24 21:12:06.705061"
+    },
+    "1071470519964155987": {
+        "mc_username": "Troquez",
+        "mc_uuid": "97f9fcbcfa3a44208bb8716cfeebca26",
+        "game_type": "SBP",
+        "preferred_server": "central",
+        "current_tier": "None",
+        "peak_tier": "None",
+        "verified_at": "2026-04-26 11:15:21.708532"
+    },
+    "1304766981169483861": {
+        "mc_username": "_Gamer_Master_",
+        "mc_uuid": "f43d829965b0488d90fc0790cc5d7fc9",
+        "game_type": "SBP",
+        "preferred_server": "pvphub",
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-28 17:56:15.627358"
+    },
+    "1480276665908334894": {
+        "mc_username": "ZoneXx_",
+        "mc_uuid": "e0914cf1afe3444fbd385f95823e5b6c",
+        "game_type": "DPD",
+        "preferred_server": "eu.catpvp.net",
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-29 18:49:09.362119"
+    },
+    "1034101296447373463": {
+        "mc_username": "MeHulkman",
+        "mc_uuid": "7ca561b4b3b04600a1b6c13c9ad52c51",
+        "game_type": "DBP",
+        "preferred_server": "mcpvp.club",
+        "current_tier": "LT3",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-29 19:42:22.624040"
     }
 }
