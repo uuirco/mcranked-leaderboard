@@ -169,5 +169,14 @@
         "current_tier": "None",
         "peak_tier": "None",
         "verified_at": "2026-04-30 21:05:34.675394"
+    },
+    "1428675134029430786": {
+        "mc_username": "DangerWanda",
+        "mc_uuid": "d5914dfcb2b74af0b0241bc6b4077658",
+        "game_type": "SBP",
+        "preferred_server": "crystalranked",
+        "current_tier": "HT3",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-04-30 21:27:38.786926"
     }
 }
