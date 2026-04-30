@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,9 +13,9 @@
             --card-bg: rgba(17, 26, 46, 0.8);
             --accent-blue: #3b82f6;
             --text-dim: #94a3b8;
-            --gold: #facc15;
-            --silver: #cbd5e1;
-            --bronze: #fb923c;
+            --gold: #ffcf4a;
+            --silver: #a4b3c7;
+            --bronze: #dd8849;
         }
 
         * { box-sizing: border-box; }
@@ -30,7 +30,6 @@
             min-height: 100vh;
         }
 
-        /* PARTICLES */
         #particles {
             position: fixed;
             inset: 0;
@@ -56,7 +55,6 @@
             to { transform: translateY(-10vh); opacity: 0; }
         }
 
-        /* CONTAINER */
         .container {
             width: 90%;
             max-width: 1000px;
@@ -66,7 +64,6 @@
             z-index: 2;
         }
 
-        /* HEADER */
         .header-box {
             display: flex;
             justify-content: space-between;
@@ -112,7 +109,10 @@
             animation: pulse 2s infinite;
         }
 
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
 
         .verified-count {
             font-size: 12px;
@@ -151,7 +151,6 @@
             box-shadow: 0 0 20px rgba(59,130,246,0.15);
         }
 
-        /* LIST */
         .row {
             display: grid;
             grid-template-columns: 70px 1fr 150px 80px;
@@ -180,9 +179,19 @@
             color: var(--text-dim);
         }
 
-        .rank-1 { color: var(--gold); text-shadow: 0 0 15px rgba(250, 204, 21, 0.4); font-size: 24px; }
-        .rank-2 { color: var(--silver); }
-        .rank-3 { color: var(--bronze); }
+        .rank-1 {
+            color: var(--gold);
+            text-shadow: 0 0 15px rgba(255,207,74,0.4);
+            font-size: 24px;
+        }
+
+        .rank-2 {
+            color: var(--silver);
+        }
+
+        .rank-3 {
+            color: var(--bronze);
+        }
 
         .player-info {
             display: flex;
@@ -198,9 +207,14 @@
             border: 2px solid rgba(255,255,255,0.05);
         }
 
-        .row:hover .avatar { transform: scale(1.1) rotate(-5deg); }
+        .row:hover .avatar {
+            transform: scale(1.1) rotate(-5deg);
+        }
 
-        .name { font-weight: 700; font-size: 16px; }
+        .name {
+            font-weight: 700;
+            font-size: 16px;
+        }
 
         .tier {
             display: inline-flex;
@@ -223,7 +237,6 @@
             font-size: 13px;
         }
 
-        /* MODAL */
         .modal {
             position: fixed;
             inset: 0;
@@ -258,11 +271,42 @@
             letter-spacing: 1px;
         }
 
-        /* TIER COLORS */
-        .HT1 { color: var(--gold); border: 1px solid var(--gold); box-shadow: 0 0 10px rgba(250,204,21,0.2); }
-        .LT1 { color: #fbbf24; }
-        .HT2 { color: #e2e8f0; }
-        .HT3 { color: #fdba74; }
+        /* CUSTOM TIER COLORS */
+        .HT1 {
+            color: #ffcf4a;
+            border: 1px solid #ffcf4a;
+            box-shadow: 0 0 10px rgba(255,207,74,0.25);
+        }
+
+        .LT1 {
+            color: #d5b355;
+            border: 1px solid #d5b355;
+            box-shadow: 0 0 10px rgba(213,179,85,0.25);
+        }
+
+        .HT2 {
+            color: #a4b3c7;
+            border: 1px solid #a4b3c7;
+            box-shadow: 0 0 10px rgba(164,179,199,0.25);
+        }
+
+        .LT2 {
+            color: #888d95;
+            border: 1px solid #888d95;
+            box-shadow: 0 0 10px rgba(136,141,149,0.25);
+        }
+
+        .HT3 {
+            color: #dd8849;
+            border: 1px solid #dd8849;
+            box-shadow: 0 0 10px rgba(221,136,73,0.25);
+        }
+
+        .LT3 {
+            color: #b36830;
+            border: 1px solid #b36830;
+            box-shadow: 0 0 10px rgba(179,104,48,0.25);
+        }
     </style>
 </head>
 
@@ -273,14 +317,16 @@
         <div class="header-box">
             <div class="title-section">
                 <img src="MCRanked.png" alt="MCRANKED" class="title-img">
-                <div class="subtitle"><span class="live-dot"></span>Elite Leaderboard</div>
+                <div class="subtitle">
+                    <span class="live-dot"></span>Elite Leaderboard
+                </div>
             </div>
 
             <div class="verified-count">
                 Users <span id="user-count">0</span>
             </div>
 
-            <div class="header-right" style="display: flex; gap: 15px; align-items: center;">
+            <div class="header-right" style="display:flex; gap:15px; align-items:center;">
                 <div class="search-inline">
                     <input id="search" placeholder="Search player name...">
                 </div>
@@ -296,8 +342,8 @@
     <div class="modal" id="modal">
         <div class="card">
             <div style="position:absolute; top:20px; right:25px; cursor:pointer; opacity:0.5" onclick="closeModal()">✕</div>
-            <img id="mAvatar" width="120" height="120" style="border-radius:24px; margin-bottom:20px; border: 3px solid rgba(255,255,255,0.05);">
-            <h2 id="mName" style="margin: 10px 0; font-size: 28px;"></h2>
+            <img id="mAvatar" width="120" height="120" style="border-radius:24px; margin-bottom:20px; border:3px solid rgba(255,255,255,0.05);">
+            <h2 id="mName" style="margin:10px 0; font-size:28px;"></h2>
             <div id="modalUUID" style="font-family:'JetBrains Mono'; font-size:10px; color:var(--text-dim); margin-bottom:20px; opacity:0.6;"></div>
             <div id="mTierBadge" class="tier">
                 <span id="mTierText"></span>
@@ -307,12 +353,25 @@
     </div>
 
     <script>
-        const tierPoints = { HT1:60, LT1:45, HT2:30, LT2:20, HT3:10, LT3:6, HT4:4, LT4:3, HT5:2, LT5:1 };
+        const tierPoints = {
+            HT1: 60,
+            LT1: 45,
+            HT2: 30,
+            LT2: 20,
+            HT3: 10,
+            LT3: 6,
+            HT4: 4,
+            LT4: 3,
+            HT5: 2,
+            LT5: 1
+        };
+
         let players = [];
 
         function createParticles() {
             const c = document.getElementById("particles");
-            for(let i=0; i<60; i++) {
+
+            for (let i = 0; i < 60; i++) {
                 const p = document.createElement("div");
                 p.className = "particle";
                 p.style.left = Math.random() * 100 + "vw";
@@ -326,38 +385,60 @@
             try {
                 const res = await fetch("verified_users.json?cache=" + Date.now());
                 const data = await res.json();
-                players = Object.values(data).map(p => ({
-                    name: p.mc_username,
-                    uuid: p.mc_uuid,
-                    tier: p.current_tier || "UNRANKED",
-                    region: "EU",
-                    points: tierPoints[p.current_tier] || 0
-                })).sort((a,b) => b.points - a.points);
+
+                players = Object.values(data)
+                    .map(p => ({
+                        name: p.mc_username,
+                        uuid: p.mc_uuid,
+                        tier: p.current_tier || "UNRANKED",
+                        region: "EU",
+                        points: tierPoints[p.current_tier] || 0
+                    }))
+                    .sort((a, b) => b.points - a.points);
 
                 document.getElementById("user-count").innerText = players.length;
+
                 render(players);
-            } catch(e) { console.error("Load failed", e); }
+            } catch (e) {
+                console.error("Load failed", e);
+            }
         }
 
         function render(list) {
             const box = document.getElementById("list");
             box.innerHTML = "";
 
+            let displayRank = 1;
+
             list.forEach((p, i) => {
-                const rank = i + 1;
+                if (i > 0 && p.points < list[i - 1].points) {
+                    displayRank = i + 1;
+                }
+
                 const row = document.createElement("div");
                 row.className = "row";
+
                 row.innerHTML = `
-                    <div class="rank ${rank <= 3 ? 'rank-'+rank : ''}">#${rank}</div>
+                    <div class="rank ${displayRank <= 3 ? 'rank-' + displayRank : ''}">
+                        #${displayRank}
+                    </div>
+
                     <div class="player-info">
                         <img class="avatar" src="https://mc-heads.net/avatar/${p.name}/44">
                         <div class="name">${p.name}</div>
                     </div>
+
                     <div class="tier-container">
-                        <div class="tier ${p.tier}">${p.tier}</div>
+                        <div class="tier ${p.tier}">
+                            ${p.tier}
+                        </div>
                     </div>
-                    <div class="region-tag">${p.region}</div>
+
+                    <div class="region-tag">
+                        ${p.region}
+                    </div>
                 `;
+
                 row.onclick = () => openProfile(p);
                 box.appendChild(row);
             });
@@ -366,44 +447,61 @@
         function openProfile(p) {
             const modal = document.getElementById("modal");
             modal.style.display = "flex";
-            document.getElementById("mAvatar").src = `https://mc-heads.net/avatar/${p.name}/120`;
+
+            document.getElementById("mAvatar").src =
+                `https://mc-heads.net/avatar/${p.name}/120`;
+
             document.getElementById("mName").innerText = p.name;
             document.getElementById("modalUUID").innerText = p.uuid;
             document.getElementById("mTierText").innerText = p.tier;
-            document.getElementById("mTierBadge").className = "tier " + p.tier;
-            document.getElementById("mPoints").innerHTML = `<div class="points-box">${p.points} RATING POINTS</div>`;
+
+            document.getElementById("mTierBadge").className =
+                "tier " + p.tier;
+
+            document.getElementById("mPoints").innerHTML =
+                `<div class="points-box">${p.points} RATING POINTS</div>`;
         }
 
-        function closeModal() { document.getElementById("modal").style.display = "none"; }
-
-const searchInput = document.getElementById("search");
-
-searchInput.addEventListener("input", (e) => {
-    const v = e.target.value.toLowerCase();
-    const filtered = players.filter(p =>
-        p.name.toLowerCase().includes(v)
-    );
-    render(filtered);
-});
-
-searchInput.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-        const v = e.target.value.toLowerCase();
-
-        const match = players.find(p =>
-            p.name.toLowerCase() === v
-        );
-
-        if (match) {
-            openProfile(match);
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
         }
-    }
-});
 
-        window.onclick = (e) => { if(e.target == document.getElementById("modal")) closeModal(); }
+        const searchInput = document.getElementById("search");
+
+        searchInput.addEventListener("input", (e) => {
+            const v = e.target.value.toLowerCase();
+
+            const filtered = players.filter(p =>
+                p.name.toLowerCase().includes(v)
+            );
+
+            render(filtered);
+        });
+
+        searchInput.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+                const v = e.target.value.toLowerCase();
+
+                const match = players.find(p =>
+                    p.name.toLowerCase() === v
+                );
+
+                if (match) {
+                    openProfile(match);
+                }
+            }
+        });
+
+        window.onclick = (e) => {
+            if (e.target === document.getElementById("modal")) {
+                closeModal();
+            }
+        };
 
         createParticles();
         load();
+
         setInterval(load, 30000);
     </script>
 </body>
+</html>
