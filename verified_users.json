@@ -116,15 +116,6 @@
         "peak_tier": "Unranked",
         "verified_at": "2026-04-24 18:44:55.920889"
     },
-    "1199090289034399856": {
-        "mc_username": "WalksyMain",
-        "mc_uuid": "cde6b5dfe3b84c1ab9982f6e6fbe5ef2",
-        "game_type": null,
-        "preferred_server": null,
-        "current_tier": "HT2",
-        "peak_tier": "Unranked",
-        "verified_at": "2026-04-24 21:12:06.705061"
-    },
     "1071470519964155987": {
         "mc_username": "Troquez",
         "mc_uuid": "97f9fcbcfa3a44208bb8716cfeebca26",
@@ -160,5 +151,14 @@
         "current_tier": "LT3",
         "peak_tier": "Unranked",
         "verified_at": "2026-04-29 19:42:22.624040"
+    },
+    "1482374659914862704": {
+        "mc_username": "MechanicalDemon",
+        "mc_uuid": "9da985669ae343bd81d2b9610bc35884",
+        "game_type": "DBP",
+        "preferred_server": "Vikur.net",
+        "current_tier": "None",
+        "peak_tier": "None",
+        "verified_at": "2026-04-30 21:05:34.675394"
     }
 }
