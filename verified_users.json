@@ -121,7 +121,7 @@
         "mc_uuid": "cde6b5dfe3b84c1ab9982f6e6fbe5ef2",
         "game_type": null,
         "preferred_server": null,
-        "current_tier": "None",
+        "current_tier": "Unranked",
         "peak_tier": "HT2",
         "verified_at": "2026-04-24 21:12:06.705061"
     },
@@ -130,7 +130,7 @@
         "mc_uuid": "97f9fcbcfa3a44208bb8716cfeebca26",
         "game_type": "SBP",
         "preferred_server": "central",
-        "current_tier": "None",
+        "current_tier": "Unranked",
         "peak_tier": "None",
         "verified_at": "2026-04-26 11:15:21.708532"
     },
