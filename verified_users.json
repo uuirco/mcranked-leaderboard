@@ -8,15 +8,6 @@
         "peak_tier": "HT3",
         "verified_at": "2026-04-21 14:00:15.908904"
     },
-    "438246026357243925": {
-        "mc_username": "Maximilian53",
-        "mc_uuid": "798c20706bf440e8bb02bfdf039a8cd2",
-        "game_type": null,
-        "preferred_server": null,
-        "current_tier": "LT2",
-        "peak_tier": "HT3",
-        "verified_at": "2026-04-21 15:27:15.350971"
-    },
     "1400125611812589730": {
         "mc_username": "PARTYSVENSKENG11",
         "mc_uuid": "b9215474d8874a06ad978a1eb0a11682",
@@ -115,6 +106,15 @@
         "current_tier": "Unranked",
         "peak_tier": "Unranked",
         "verified_at": "2026-04-24 18:44:55.920889"
+    },
+    "1199090289034399856": {
+        "mc_username": "WalksyMain",
+        "mc_uuid": "cde6b5dfe3b84c1ab9982f6e6fbe5ef2",
+        "game_type": null,
+        "preferred_server": null,
+        "current_tier": "None",
+        "peak_tier": "HT2",
+        "verified_at": "2026-04-24 21:12:06.705061"
     },
     "1071470519964155987": {
         "mc_username": "Troquez",
