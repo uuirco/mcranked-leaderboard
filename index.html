@@ -18,12 +18,13 @@
             --bronze: #dd8849;
         }
 
-        * { box-sizing: border-box; }
+        * {
+            box-sizing: border-box;
+        }
 
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
-            background: var(--bg-dark);
             background: radial-gradient(circle at 50% -20%, #1e293b 0%, #060b16 80%);
             color: white;
             overflow-x: hidden;
@@ -49,10 +50,23 @@
         }
 
         @keyframes floatUp {
-            from { transform: translateY(110vh); opacity: 0; }
-            10% { opacity: 0.3; }
-            90% { opacity: 0.3; }
-            to { transform: translateY(-10vh); opacity: 0; }
+            from {
+                transform: translateY(110vh);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 0.3;
+            }
+
+            90% {
+                opacity: 0.3;
+            }
+
+            to {
+                transform: translateY(-10vh);
+                opacity: 0;
+            }
         }
 
         .container {
@@ -110,8 +124,13 @@
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.4; }
+            0%, 100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.4;
+            }
         }
 
         .verified-count {
@@ -168,7 +187,7 @@
         .row:hover {
             transform: scale(1.01) translateX(8px);
             background: rgba(30, 41, 59, 0.7);
-            border-color: rgba(59, 130, 246, 0.4);
+            border-color: rgba(59,130,246,0.4);
             box-shadow: 0 10px 30px rgba(0,0,0,0.4);
         }
 
@@ -271,7 +290,7 @@
             letter-spacing: 1px;
         }
 
-        /* CUSTOM TIER COLORS */
+        /* Tier Colors */
         .HT1 {
             color: #ffcf4a;
             border: 1px solid #ffcf4a;
@@ -318,7 +337,8 @@
             <div class="title-section">
                 <img src="MCRanked.png" alt="MCRANKED" class="title-img">
                 <div class="subtitle">
-                    <span class="live-dot"></span>Elite Leaderboard
+                    <span class="live-dot"></span>
+                    Elite Leaderboard
                 </div>
             </div>
 
@@ -330,6 +350,7 @@
                 <div class="search-inline">
                     <input id="search" placeholder="Search player name...">
                 </div>
+
                 <a href="https://discord.gg/F2SbgD5PwW" target="_blank" style="background:#5865F2; padding:10px; border-radius:12px; display:flex;">
                     <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" width="20" style="filter:invert(1)">
                 </a>
@@ -342,12 +363,17 @@
     <div class="modal" id="modal">
         <div class="card">
             <div style="position:absolute; top:20px; right:25px; cursor:pointer; opacity:0.5" onclick="closeModal()">✕</div>
+
             <img id="mAvatar" width="120" height="120" style="border-radius:24px; margin-bottom:20px; border:3px solid rgba(255,255,255,0.05);">
+
             <h2 id="mName" style="margin:10px 0; font-size:28px;"></h2>
+
             <div id="modalUUID" style="font-family:'JetBrains Mono'; font-size:10px; color:var(--text-dim); margin-bottom:20px; opacity:0.6;"></div>
+
             <div id="mTierBadge" class="tier">
                 <span id="mTierText"></span>
             </div>
+
             <div id="mPoints"></div>
         </div>
     </div>
@@ -399,6 +425,7 @@
                 document.getElementById("user-count").innerText = players.length;
 
                 render(players);
+
             } catch (e) {
                 console.error("Load failed", e);
             }
@@ -412,7 +439,7 @@
 
             list.forEach((p, i) => {
                 if (i > 0 && p.points < list[i - 1].points) {
-                    displayRank = i + 1;
+                    displayRank++;
                 }
 
                 const row = document.createElement("div");
@@ -440,6 +467,7 @@
                 `;
 
                 row.onclick = () => openProfile(p);
+
                 box.appendChild(row);
             });
         }
@@ -448,15 +476,12 @@
             const modal = document.getElementById("modal");
             modal.style.display = "flex";
 
-            document.getElementById("mAvatar").src =
-                `https://mc-heads.net/avatar/${p.name}/120`;
-
+            document.getElementById("mAvatar").src = `https://mc-heads.net/avatar/${p.name}/120`;
             document.getElementById("mName").innerText = p.name;
             document.getElementById("modalUUID").innerText = p.uuid;
             document.getElementById("mTierText").innerText = p.tier;
 
-            document.getElementById("mTierBadge").className =
-                "tier " + p.tier;
+            document.getElementById("mTierBadge").className = "tier " + p.tier;
 
             document.getElementById("mPoints").innerHTML =
                 `<div class="points-box">${p.points} RATING POINTS</div>`;
