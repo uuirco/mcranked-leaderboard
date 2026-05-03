@@ -178,5 +178,23 @@
         "current_tier": "HT3",
         "peak_tier": "Unranked",
         "verified_at": "2026-04-30 21:27:38.786926"
+    },
+    "1293925510157434911": {
+        "mc_username": "OnLeeUA",
+        "mc_uuid": "5f1665417fe046718f3077a73f021ede",
+        "game_type": "DBP",
+        "preferred_server": "mcprac.net / vikur.net",
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-05-03 15:12:52.438941"
+    },
+    "1390025636088647700": {
+        "mc_username": "Qvexyyy",
+        "mc_uuid": "62ac7089765047c4996c922ad17bfc06",
+        "game_type": "DBP",
+        "preferred_server": "apple",
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-05-03 15:28:24.556811"
     }
 }
