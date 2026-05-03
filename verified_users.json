@@ -175,8 +175,8 @@
         "mc_uuid": "d5914dfcb2b74af0b0241bc6b4077658",
         "game_type": "SBP",
         "preferred_server": "crystalranked",
-        "current_tier": "HT3",
-        "peak_tier": "Unranked",
+        "current_tier": "LT2",
+        "peak_tier": "HT3",
         "verified_at": "2026-04-30 21:27:38.786926"
     },
     "1293925510157434911": {
@@ -196,10 +196,5 @@
         "current_tier": "Unranked",
         "peak_tier": "Unranked",
         "verified_at": "2026-05-03 15:28:24.556811"
-    },
-    "1392923560837906463": {
-        "mc_username": "CrystalMCR",
-        "mc_uuid": "a6a98a1718b9469183298e69ed4398e9",
-        "current_tier": "LT3"
     }
 }
