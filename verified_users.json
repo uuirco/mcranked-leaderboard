@@ -214,5 +214,14 @@
         "current_tier": "Unranked",
         "peak_tier": "Unranked",
         "verified_at": "2026-05-03 16:49:56.040910"
+    },
+    "1392923560837906463": {
+        "mc_username": "CrystalMCR",
+        "mc_uuid": "a6a98a1718b9469183298e69ed4398e9",
+        "game_type": null,
+        "preferred_server": null,
+        "current_tier": "HT3",
+        "peak_tier": "LT3",
+        "verified_at": "2026-05-03 18:24:47.285928"
     }
 }
