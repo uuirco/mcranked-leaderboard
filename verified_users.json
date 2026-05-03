@@ -223,5 +223,14 @@
         "current_tier": "HT3",
         "peak_tier": "LT3",
         "verified_at": "2026-05-03 18:24:47.285928"
+    },
+    "1195071279833808959": {
+        "mc_username": "sabojin",
+        "mc_uuid": "985ecd80559642c9b10278e675ddd96a",
+        "game_type": "SBP",
+        "preferred_server": "naw2.catpvp.xyz",
+        "current_tier": "HT4",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-05-03 23:19:51.844316"
     }
 }
