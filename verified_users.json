@@ -13,7 +13,7 @@
         "mc_uuid": "798c20706bf440e8bb02bfdf039a8cd2",
         "game_type": null,
         "preferred_server": null,
-        "current_tier": "Unranked",
+        "current_tier": "None",
         "peak_tier": "LT2",
         "verified_at": "2026-04-21 15:27:15.350971"
     },
@@ -93,7 +93,7 @@
         "mc_username": "Marlowww",
         "mc_uuid": "d219c8eed32e4da2b22e0aa69d36c88a",
         "game_type": "DBP",
-        "preferred_server": "Pidors",
+        "preferred_server": "pidors",
         "current_tier": "Unranked",
         "peak_tier": "Unranked",
         "verified_at": "2026-04-23 18:27:31.225181"
@@ -121,7 +121,7 @@
         "mc_uuid": "cde6b5dfe3b84c1ab9982f6e6fbe5ef2",
         "game_type": null,
         "preferred_server": null,
-        "current_tier": "Unranked",
+        "current_tier": "None",
         "peak_tier": "HT2",
         "verified_at": "2026-04-24 21:12:06.705061"
     },
@@ -130,7 +130,7 @@
         "mc_uuid": "97f9fcbcfa3a44208bb8716cfeebca26",
         "game_type": "SBP",
         "preferred_server": "central",
-        "current_tier": "Unranked",
+        "current_tier": "None",
         "peak_tier": "None",
         "verified_at": "2026-04-26 11:15:21.708532"
     },
@@ -138,10 +138,10 @@
         "mc_username": "_Gamer_Master_",
         "mc_uuid": "f43d829965b0488d90fc0790cc5d7fc9",
         "game_type": "SBP",
-        "preferred_server": "pvphub",
+        "preferred_server": "aaa",
         "current_tier": "LT3",
-        "peak_tier": "Unranked",
-        "verified_at": "2026-04-28 17:56:15.627358"
+        "peak_tier": "LT3",
+        "verified_at": "2026-05-01 23:59:45.944213"
     },
     "1480276665908334894": {
         "mc_username": "ZoneXx_",
@@ -165,9 +165,9 @@
         "mc_username": "MechanicalDemon",
         "mc_uuid": "9da985669ae343bd81d2b9610bc35884",
         "game_type": "DBP",
-        "preferred_server": "Vikur.net",
+        "preferred_server": "vikur.net",
         "current_tier": "LT3",
-        "peak_tier": "None",
+        "peak_tier": "LT3",
         "verified_at": "2026-04-30 21:05:34.675394"
     },
     "1428675134029430786": {
