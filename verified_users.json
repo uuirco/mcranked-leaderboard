@@ -173,8 +173,8 @@
     "1428675134029430786": {
         "mc_username": "WhiteGirlMusicc",
         "mc_uuid": "d5914dfcb2b74af0b0241bc6b4077658",
-        "game_type": null,
-        "preferred_server": null,
+        "game_type": "SBP",
+        "preferred_server": "cr",
         "current_tier": "LT2",
         "peak_tier": "LT2",
         "verified_at": "2026-05-03 16:14:20.450018"
@@ -192,9 +192,27 @@
         "mc_username": "Qvexyyy",
         "mc_uuid": "62ac7089765047c4996c922ad17bfc06",
         "game_type": "DBP",
-        "preferred_server": "apple",
+        "preferred_server": "ranked",
         "current_tier": "Unranked",
         "peak_tier": "Unranked",
         "verified_at": "2026-05-03 15:28:24.556811"
+    },
+    "1453665345582927970": {
+        "mc_username": "Aaliyahfv",
+        "mc_uuid": "c175e0eb09d04c278e52018ac870f1cc",
+        "game_type": "DBP",
+        "preferred_server": "apple",
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-05-03 16:40:05.530771"
+    },
+    "1489371886671364139": {
+        "mc_username": "Jessicafv",
+        "mc_uuid": "8b2bad9642894391a5d0afb906040a85",
+        "game_type": "DBP",
+        "preferred_server": "APPLE",
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-05-03 16:49:56.040910"
     }
 }
