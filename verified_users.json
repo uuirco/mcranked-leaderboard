@@ -66,9 +66,9 @@
         "mc_username": "vqmpa_",
         "mc_uuid": "8dd6b2d078f1450488b968bfbd37b3bc",
         "game_type": "SBP",
-        "preferred_server": "central",
+        "preferred_server": "apple",
         "current_tier": "LT3",
-        "peak_tier": "Unranked",
+        "peak_tier": "LT3",
         "verified_at": "2026-04-22 14:38:36.024537"
     },
     "1490408440424829101": {
@@ -117,13 +117,13 @@
         "verified_at": "2026-04-24 18:44:55.920889"
     },
     "1199090289034399856": {
-        "mc_username": "WalksyMain",
+        "mc_username": "KEIKAS",
         "mc_uuid": "cde6b5dfe3b84c1ab9982f6e6fbe5ef2",
-        "game_type": null,
-        "preferred_server": null,
-        "current_tier": "None",
-        "peak_tier": "HT2",
-        "verified_at": "2026-04-24 21:12:06.705061"
+        "game_type": "SBP",
+        "preferred_server": "centralpvp.net",
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-05-03 14:53:04.881578"
     },
     "1071470519964155987": {
         "mc_username": "Troquez",
