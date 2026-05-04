@@ -232,5 +232,14 @@
         "current_tier": "HT4",
         "peak_tier": "Unranked",
         "verified_at": "2026-05-03 23:19:51.844316"
+    },
+    "1477295447055011850": {
+        "mc_username": "Yaya12cpvp",
+        "mc_uuid": "0edd8d5f87474d719f0fba40498c475c",
+        "game_type": "SBP",
+        "preferred_server": "acpvp",
+        "current_tier": "Unranked",
+        "peak_tier": "Unranked",
+        "verified_at": "2026-05-04 13:29:47.706536"
     }
 }
